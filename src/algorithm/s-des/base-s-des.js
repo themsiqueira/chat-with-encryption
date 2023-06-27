@@ -3,7 +3,6 @@ const { generateSubkeys } = require('./utils/generate-sub-keys');
 const { permutation } = require('./utils/permutation');
 const { xor } = require('./utils/xor');
 
-// Função para realizar a criptografia e descriptografia S-DES
 const sdes = (ciphertext, key, encrypt = true) => {
   // Gerar as subchaves
   const [subkeyOne, subkeyTwo] = generateSubkeys(key);
